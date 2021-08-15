@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+}
+main{
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+}
+
+.navbar{
+    background: linear-gradient(to right top,#4984d1,#727eeb);
+    height:9vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+   
+}
+.logo{
+    color:aliceblue;
+    font-size: larger;
+    font-weight: bold;
+}
+.navbar ul{
+    /* set width for justify content */
+    width:40%;
+    display: flex;
+    justify-content:space-around;
+   }
+   .navlink li {
+    list-style-type: none; 
+   
+}
+.navlink li a{
+    text-decoration:none;
+    color:aliceblue;
+    padding: 10px;
+    position:relative;
+}
+.navlink li a::before{
+    content: " ";
+    width:0%;
+    position: absolute;
+    top: 85%;
+    left:10%;
+    border-bottom: 3px solid rgba( 255, 255, 255, 0.40 );
+    transition: all 0.3s linear;
+}
+ 
+.navlink li a:hover::before{
+    background: rgba( 255, 255, 255, 0.40 );
+    width:80%
+    
+}
+ 
+.main-page{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.left-main-page{
+    margin-left:90px;
+    margin-top:50px;
+}
+.left-main-page h1,h3,p{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing:4px;
+    line-height: 1.5;
+   margin-bottom: 20px;
+}
+.left-main-page h1{
+    font-weight: 600px;
+    font-size:50px; 
+}
+.left-main-page h3{
+    font-weight: 600px;
+    font-size:30px; 
+}
+.left-main-page p{
+    margin-bottom: 25px;
+}
+.btn-link a:first-child ,.btn-link a:nth-child(2){
+    text-decoration:none;
+    font-weight:bold;
+    font-size:15px;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    background: linear-gradient(to right top,#4984d1,#727eeb);
+    border: 3px solid rgb(61, 138, 240);
+    padding: 10px 30px;
+    margin-right: 20px;   
+}
+
+.btn-link a:first-child:hover{
+    background: none;
+    color: #000;
+}
+.btn-link a:nth-child(2){
+    background: none;
+    color: #000;
+}
